@@ -1,7 +1,7 @@
 # Equivariant–Invariant Feature Learning for Visual Perception
 
 <p align="center">
-  <img src="docs/Fig_Architecture.png" width="900" alt="Overall architecture of the proposed framework">
+  <img src="Fig_Architecture.png" width="900" alt="Overall architecture of the proposed framework">
 </p>
 
 **Author:** R Prerana, KLE Technological University
@@ -23,7 +23,7 @@ A shared backbone encodes both images. Each feature vector is split into an inva
 **Contribution.** A **Transformation Encoder** estimates this transformation from the backbone features of the two images and their difference. The estimate replaces the externally supplied transformation as the input to the hypernetwork. The ground-truth transformation is used only during training, to supervise the encoder, together with an inverse-consistency loss on the reversed image pair. At inference, only the image pair is required.
 
 <p align="center">
-  <img src="docs/Fig_Encoder_Internals_Vertical.png" width="320" alt="Transformation Encoder">
+  <img src="Fig_Encoder_Internals_Vertical.png" width="320" alt="Transformation Encoder">
 </p>
 
 **Transformation Encoder.** The input is the concatenation of the two backbone features and their difference, a 1536-dimensional vector. It passes through an MLP with layers 1536, 1024, 512 and 64 with ReLU, then a linear layer of size 4, which gives the estimated transformation ĝ. The encoder input is detached, so the encoder does not update the backbone.
@@ -49,7 +49,7 @@ L = λ_inv·L_inv + λ_equi·L_equi + λ_trans·L_trans + λ_ic·L_ic + λ_std·
 The framework is evaluated on three datasets, each with a different kind of transformation between the two images of a pair.
 
 <p align="center">
-  <img src="docs/Fig_Datasets_combined.png" width="800" alt="Dataset examples">
+  <img src="Fig_Datasets_combined.png" width="800" alt="Dataset examples">
 </p>
 
 - **3DIEBench** – rendered 3D objects; the transformation is the relative object rotation, known exactly for every pair.
