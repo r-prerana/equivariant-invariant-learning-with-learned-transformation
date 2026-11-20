@@ -1,0 +1,44 @@
+# Checkpoints and weights
+*.pth
+*.pt
+*.ckpt
+checkpoints/
+weights/
+
+# Assets outside repo
+assets/
+*_assets/
+
+# Data and dataset splits
+datasets/
+data/
+*.npy
+*.npz
+*.tar.gz
+*.zip
+
+# Logs and outputs
+logs/
+eval_logs/
+runs/
+wandb/
+*.log
+*.csv
+pred_eval/
+
+# Python caches and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store

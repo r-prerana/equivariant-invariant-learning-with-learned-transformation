@@ -1,0 +1,16 @@
+Equivariant-Invariant Representation Learning with Transformation-Conditioned Hypernetworks
+
+This repository contains research code developed for equivariant and invariant representation learning across continuous 3D rotations, vehicle viewpoints, and discrete domain shifts.
+
+Portions of this software are derived from the official implementation of:
+"Self-Supervised Equivariant and Invariant Representation Learning (SIE)"
+by Quentin Garrido, Laurent Najman, and Yann LeCun (ICML 2023),
+originally licensed by Meta Platforms, Inc. under the terms specified in the respective source files.
+Copyright (c) Meta Platforms, Inc. and affiliates. All rights reserved.
+
+Modifications and new research components:
+- Learned Transformation Encoder conditioning Hypernetworks without ground-truth transformation parameters at test time.
+- Continuous 3D rotation quaternion transformation estimation for 3DIEBench.
+- Vehicle viewpoint transformation estimation for VeRi-776.
+- Discrete categorical Day/Night domain shift transformation estimation and Identity-Balanced Supervised Contrastive Learning (Identity SupCon) for DN-348.
+Copyright (c) 2026. All rights reserved.
